@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  overflow: visible;
+}
+
+/* styling container */
+.container {
+  /* background-color: var(--Darkcyan); */
+  display: flex;
+  flex-direction: column;
+  background-image: url(bg-pattern-top.svg);
+}
+
+/* styling card */
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  width: fit-content;
+  margin: 180px 50px;
+  position: relative;
+  top: 30px;
+}
+
+/* image styling */
+
+img {
+  position: absolute;
+  top: 80px;
+  left: 33%;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+/* text styling */
+.name {
+  padding-top: 80px;
+  padding-bottom: 0;
+  color: var(--Verydarkdesaturatedblue);
+}
+.place {
+  color: var(--Darkgray);
+}
+.name,
+.place {
+  text-align: center;
+}
+span {
+  color: var(--Darkgrayishblue);
+}
+/* styling horizontal rule */
+hr {
+  color: var(--Darkgray);
+  border-width: 1px;
+  width: 100%;
+  margin-top: 20px;
+}
+/* likes follower & photo */
+.stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 10px 0;
+}
+.likes,
+.followers,
+.photos {
+  padding: 31px;
+  text-align: center;
+}
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --Darkgrayishblue: hsl(227, 10%, 46%);
+  --Darkgray: hsl(0, 0%, 59%);
+}
